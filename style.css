@@ -325,6 +325,15 @@ body main .main-cont .main-box .soc-med .contact ul li a span {
   margin: 15px;
 }
 
+.footer {
+  justify-content: center;
+  text-align: center;
+  background-color: burlywood;
+  padding: 10px;
+  font-weight: bolder;
+  margin: 0 10px;
+}
+
 @media screen and (max-width: 903px) {
   .main-cont {
     display: flex;
@@ -367,6 +376,13 @@ body main .main-cont .main-box .soc-med .contact ul li a span {
     text-align: center;
     border-bottom: 2px solid blue;
     line-height: 30px;
+  }
+}
+@media screen and (width: 912px) {
+  .mini {
+    display: inline-flex;
+    flex-direction: column;
+    background-color: red;
   }
 }
 

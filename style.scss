@@ -353,6 +353,15 @@ body {
     float: left;
     margin: 15px;
 }
+.footer{
+    justify-content: center;
+    text-align: center;
+    background-color: burlywood;
+    padding: 10px;
+    font-weight: bolder;
+    margin: 0 10px;
+
+}
 
 @media screen and (max-width: 903px) {
     .main-cont {
@@ -410,3 +419,11 @@ body {
 
 
 }
+@media screen and (width: 912px) {
+    .mini{
+        display: inline-flex;
+        flex-direction: column;
+        background-color: red;
+    }
+}
+    
