@@ -1,0 +1,373 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap");
+/* CSS Reset */
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:after, blockquote:before, q:after, q:before {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  transition: all 0.1s;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  background-color: goldenrod;
+  color: rgb(51, 49, 49);
+}
+body .navbar-cont {
+  display: flex;
+  background-color: skyblue;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 10px;
+  padding: 10px 0;
+}
+body .navbar-cont .navbar-box-left {
+  background-color: salmon;
+  padding: 4px 0;
+  flex-grow: 1;
+}
+body .navbar-cont .navbar-box-left .navbar-child-left {
+  flex-grow: 1;
+  flex-wrap: wrap;
+  background-color: rgb(30, 206, 124);
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+}
+body .navbar-cont .navbar-box-left .navbar-child-left.navbar-child-left:hover {
+  background-color: rgb(95, 160, 122);
+  transition: 0.3s ease-out;
+}
+body .navbar-cont .navbar-box-left .navbar-child-left a {
+  text-decoration: none;
+}
+body .navbar-cont .navbar-box-left .navbar-child-left a .left {
+  text-align: center;
+}
+body .navbar-cont .navbar-box-left .navbar-child-left a .left h1 {
+  font-size: large;
+  color: black;
+  font-family: "Franklin Gothic Medium", sans-serif;
+}
+body .navbar-cont .navbar-box-left .navbar-child-left a .left h1 span {
+  font-weight: bolder;
+  color: slategray;
+}
+body .navbar-cont .navbar-child-mid {
+  flex-grow: 2;
+  padding: 10px;
+  margin: 0 5px;
+}
+body .navbar-cont .navbar-child-right {
+  flex-grow: 4;
+  background-color: salmon;
+  padding: 5px;
+}
+body .navbar-cont .navbar-child-right .blank-mid {
+  width: 200px;
+  flex-grow: 1;
+  background-color: red;
+}
+body .navbar-cont .navbar-child-right .nav-ul {
+  background-color: seagreen;
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 3;
+  flex-shrink: 2;
+  padding: 10px;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+body .navbar-cont .navbar-child-right .nav-ul .nav-li {
+  background-color: bisque;
+  padding: 5px 30px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-weight: bold;
+}
+body .navbar-cont .navbar-child-right .nav-ul .nav-li:hover {
+  background-color: burlywood;
+  box-shadow: 0px 0px 5px 3px burlywood;
+  transition: 0.3s;
+  z-index: 2;
+}
+body .navbar-cont .navbar-child-right .nav-ul .nav-li a {
+  text-decoration: none;
+  color: coral;
+}
+body .navbar-cont .navbar-child-right .nav-ul .logo {
+  text-align: center;
+}
+body .navbar-cont .navbar-child-right .nav-ul .logo .logo-child {
+  text-decoration: none;
+  color: coral;
+  cursor: pointer;
+  box-shadow: 0px 8px 16px 0px coral(0, 0, 0, 0.2);
+}
+body .navbar-cont .navbar-child-right .nav-ul .dropdown {
+  position: relative;
+}
+body .navbar-cont .navbar-child-right .nav-ul .dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 78.5px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  left: -20px;
+  top: 5px;
+  transition: 1s ease-in;
+}
+body .navbar-cont .navbar-child-right .nav-ul .dropdown .dropdown-content li > a {
+  color: coral;
+  text-decoration: none;
+  padding: 5px;
+  display: block;
+  text-align: center;
+}
+body .navbar-cont .navbar-child-right .nav-ul .dropdown .dropdown-content li > a:hover {
+  background-color: burlywood;
+  transition: 0.4s ease-in-out;
+  color: coral;
+}
+body .navbar-cont .navbar-child-right .nav-ul .dropdown-cont:hover .dropdown-content {
+  display: block;
+  background-color: bisque;
+  transition: 0.4s ease-in-out;
+  color: coral;
+}
+body main {
+  margin: 0 10px;
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+  box-sizing: border-box;
+}
+body main .main-cont {
+  background-color: rgb(91, 172, 243);
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+body main .main-cont .main-box {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px 0;
+  background-color: cornflowerblue;
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+}
+body main .main-cont .main-box .box-cont1 {
+  margin: 20px 30px;
+  max-width: 900px;
+}
+body main .main-cont .main-box .box-cont1 .card {
+  margin: 2px;
+}
+body main .main-cont .main-box .box-cont1 .card .h2 {
+  font-weight: bolder;
+  font-size: larger;
+}
+body main .main-cont .main-box .box-cont1 .card figure {
+  margin-left: 15px;
+}
+body main .main-cont .main-box .box-cont1 .card figure .image {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+  line-height: 200px;
+  margin: 15px 0 0 0;
+  box-shadow: 0px 0px 10px 3px rgb(54, 52, 49);
+}
+body main .main-cont .main-box .box-cont1 .card figure .image:hover {
+  transition: 0.3s ease-in-out;
+  transform: scale(102%);
+}
+body main .main-cont .main-box .box-cont1 .card figure .image:active {
+  transform: scale(85%);
+  transition: 0.3s ease-in;
+}
+body main .main-cont .main-box .box-cont1 .card figure .img-card {
+  border-radius: 10%;
+}
+body main .main-cont .main-box .box-cont1 .card figure figcaption {
+  width: 300px;
+  text-align: center;
+  border-bottom: 2px solid blue;
+  line-height: 30px;
+}
+body main .main-cont .main-box .box-cont1 .card h3 {
+  margin-top: 5px;
+}
+body main .main-cont .main-box .box-cont1 .card table tr {
+  line-height: 20px;
+  text-align: left;
+}
+body main .main-cont .main-box .box-cont1 .card p {
+  margin-top: 10px;
+  text-indent: 25px;
+  line-height: 25px;
+  text-align: justify;
+}
+body main .main-cont .main-box .box-cont1 .card p a {
+  color: blue;
+}
+body main .main-cont .main-box .explanation section {
+  margin: 15px;
+  max-width: 900px;
+}
+body main .main-cont .main-box .explanation section h2 {
+  font-weight: bolder;
+  font-size: larger;
+}
+body main .main-cont .main-box .explanation section p {
+  margin-top: 10px;
+  text-indent: 25px;
+  line-height: 25px;
+  text-align: justify;
+}
+body main .main-cont .main-box .aside-cont {
+  max-width: 400px;
+}
+body main .main-cont .main-box .soc-med {
+  padding: 50px;
+  display: flex;
+}
+body main .main-cont .main-box .soc-med .contact {
+  background-color: rgba(255, 102, 0, 0.05);
+  position: relative;
+  padding: 5px;
+  border-radius: 10px;
+  border: 2px solid blue;
+  width: 400px;
+  text-align: center;
+}
+body main .main-cont .main-box .soc-med .contact:hover {
+  background-color: rgba(187, 102, 46, 0.9);
+  transition: 0.3s ease-in-out;
+}
+body main .main-cont .main-box .soc-med .contact h2 {
+  line-height: 40px;
+  font-weight: bold;
+  text-align: center;
+  font-size: larger;
+}
+body main .main-cont .main-box .soc-med .contact p {
+  display: inline-block;
+  justify-content: center;
+  width: 200px;
+}
+body main .main-cont .main-box .soc-med .contact ul {
+  opacity: 90%;
+}
+body main .main-cont .main-box .soc-med .contact ul li {
+  align-items: center;
+  text-align: center;
+}
+body main .main-cont .main-box .soc-med .contact ul li a {
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+body main .main-cont .main-box .soc-med .contact ul li a img:hover {
+  transform: scale(110%);
+  transition: 0.5s ease-in-out;
+}
+body main .main-cont .main-box .soc-med .contact ul li a img:hover:active {
+  transform: scale(90%);
+  transition: 0.5s ease-in-out;
+}
+body main .main-cont .main-box .soc-med .contact ul li a span {
+  justify-content: center;
+  display: block;
+  text-align: center;
+}
+
+.article-img1 {
+  position: relative;
+  float: left;
+  margin: 15px;
+}
+
+@media screen and (max-width: 903px) {
+  .main-cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .main-box {
+    margin: 0 30px;
+  }
+  .aside {
+    margin: 0 30px;
+  }
+  .blank-mid {
+    display: none;
+  }
+}
+@media screen and (max-width: 350px) {
+  .main-child-box {
+    width: 320px;
+    margin: 0 auto;
+  }
+  .main-child-box .image {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
+    line-height: 150px;
+    margin: 15px 0 0 0;
+  }
+  .main-child-box .image:hover {
+    transition: 0.3s ease-in-out;
+    transform: scale(102%);
+  }
+  .main-child-box .img-card {
+    border-radius: 10%;
+  }
+  .main-child-box figcaption {
+    width: 150px;
+    text-align: center;
+    border-bottom: 2px solid blue;
+    line-height: 30px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
